@@ -7,7 +7,7 @@ import {
   FishEye,
 } from '@antv/graphin-components'
 import { ZoomOutOutlined, ZoomInOutlined } from '@ant-design/icons'
-import styles from './index.less'
+import styles from './index.css'
 import { useState } from 'react'
 const { Menu } = ContextMenu
 
@@ -59,17 +59,14 @@ export default (props) => {
   }
 
   return (
-    
-    <div className={styles.main}>
-      {/*  在组件上可以自定义组件暴露的prop属性 这里我们把需要可视化的数据传入，并且定义了layout布局，自适应画布大小 */}
       <Graphin data={data} layout={defaultLayout} fitView={true}>
         {/* 小地图 */}
-        <div className={styles.map}>
+        <div className={"map"}>
           <MiniMap visible={true} />
         </div>
 
         {/* 工具栏 */}
-        <div className={styles.toolbar}>
+        <div className={"toolbar"}>
           <Toolbar options={options} onChange={toolbarClick} />
         </div>
 
@@ -83,6 +80,5 @@ export default (props) => {
         {/* 放大镜 */}
         <FishEye options={{}} visible={visible} handleEscListener={menuClick} />
       </Graphin>
-    </div>
   )
 }
