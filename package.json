@@ -13,7 +13,7 @@
     "dev": "rescripts start",
     "build": "rescripts build",
     "test": "rescripts test",
-    "release": "npm run build && cp package.json build/ && cd build && yarn publish --access public"
+    "release": "npm config set registry https://registry.npmjs.org/ && npm run build && cp package.json build/ && cd build && yarn publish --access public && npm config set registry https://registry.npm.taobao.org/"
   },
   "browserslist": {
     "production": [
