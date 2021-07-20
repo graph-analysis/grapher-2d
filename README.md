@@ -1,8 +1,10 @@
 # 图前端可视分析APP
 
+基于 qiankun 微应用的单页插件，用于进行大数据图可视分析
+
 ## 效果预览
 
-![](https://sovlookup.github.io/front-opensource-learning/contents/Part-1/%E5%89%8D%E7%AB%AF%E5%85%A5%E9%97%A8/img/image-20210426223513413.png)
+![image](https://user-images.githubusercontent.com/53158137/126269297-6f2f75cb-4d79-45fc-bfd5-caf1cdf94c8e.png)
 
 ## Getting Started
 
